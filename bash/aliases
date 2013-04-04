@@ -1,0 +1,20 @@
+# this file contains shortcuts and functions
+
+# reload aliases
+alias reload="source ~/bin/dotfiles/bash/aliases"
+
+# navigation
+alias l='ls -lh'
+alias ll='ls -lah'
+
+alias cdd="cd -" # jump to previous directory
+
+# handy top aliases
+alias tu="top -o cpu" # sort by cpu
+alias tm="top -o vsize" # sort by memory
+
+# create folder and switch into it
+function take {
+	mkdir $1
+	cd $1
+}

@@ -1,0 +1,8 @@
+# this file contains ssh configurations
+
+# use ssh somehost instead of ssh -p 1234 mjansing@somehost.host.com
+
+# Host somehost
+# 	HostName somehost.host.com
+# 	User	mjansing
+# 	Port	1234

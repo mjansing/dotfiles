@@ -1,0 +1,18 @@
+# git configuration file
+# located: ~/.gitconfig
+
+[user]
+	name = my name
+	email = my email
+
+[color]
+	ui = true
+
+[core]
+	editor = vim
+
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+	br = branch

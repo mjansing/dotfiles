@@ -1,0 +1,5 @@
+# this file contains prompt and shell settings
+
+# colorful  output
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
