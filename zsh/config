@@ -1,0 +1,19 @@
+# this file contains prompt and shell settings
+
+# enable color support
+autoload -U colors && colors
+
+HISTFILE=~/.zsh_history
+SAVELIST=10000
+HISTSIZE=10000
+
+REPORTTIME=10
+LISTMAX=0
+
+# load autocompletion
+autoload compinit
+compinit
+
+# colorful  output
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
