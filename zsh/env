@@ -9,6 +9,9 @@ export EDITOR="subl"
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
 
+# Add NPM-bin to path
+PATH=$PATH:/usr/local/share/npm/bin/
+
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 

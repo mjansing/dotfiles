@@ -18,3 +18,5 @@ function take {
 	mkdir $1
 	cd $1
 }
+
+alias g="git status"
