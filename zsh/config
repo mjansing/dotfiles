@@ -3,16 +3,16 @@
 # enable color support
 autoload -U colors && colors
 
+HISTSIZE=1000
+SAVEHIST=1000
 HISTFILE=~/.zsh_history
-SAVELIST=10000
-HISTSIZE=10000
 
 # ignore duplication command history list
 setopt hist_ignore_dups
 
 # enable spell check
-setopt CORRECT
-setopt CORRECTALL
+#setopt CORRECT
+#setopt CORRECTALL
 
 # Show elapsed time if command took more than X seconds
 REPORTTIME=10

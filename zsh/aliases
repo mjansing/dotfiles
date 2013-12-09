@@ -1,4 +1,0 @@
-# this file contains shortcuts and functions
-
-# load bash aliases
-. ~/bin/dotfiles/bash/aliases

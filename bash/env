@@ -1,16 +1,10 @@
 # contains values used by other scripts and applications
 
-# add ~/bin directory to path
-export PATH=$PATH:~/bin
+# add ~/dotfiles/bin directory to path
+export PATH=$PATH:~/dotfiles/bin
 
 # set default editor to sublime
 export EDITOR="subl"
-
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # show custom prompt with vc
 export PS1="\u@\h:\w \[\e[0;32m\]\$(vcprompt -f '[%n:%b]')\[\e[m\]\$ "

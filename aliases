@@ -1,0 +1,45 @@
+# this file contains shortcuts and functions
+
+# edit aliases
+alias aliases="subl ~/dotfiles/bash/aliases"
+
+# reload aliases
+alias reload="source ~/dotfiles/bash/aliases"
+
+# navigation
+alias l='ls -lh'
+alias ll='ls -lah'
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+alias -- -="cd -" # jump to previous directory
+alias cdd="cd ~/Desktop" 
+
+# handy top aliases
+alias tu="top -o cpu" # sort by cpu
+alias tm="top -o vsize" # sort by memory
+
+# create folder and switch into it
+function take {
+	mkdir $1
+	cd $1
+}
+
+alias cdd="cd ~/Desktop"
+
+# git aliases
+alias g="git status"
+alias gb="git branch"
+alias gd="git diff"
+alias gl="git log"
+
+# rails aliases
+alias b="bundle install"
+alias be="bundle exec"
+alias bl="bundle list"
+alias bp="bundle package"
+alias bo="bundle open"
+alias bu="bundle update"
