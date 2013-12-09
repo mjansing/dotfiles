@@ -5,3 +5,4 @@
 . ~/dotfiles/bash/config
 
 . ~/dotfiles/aliases
+. ~/dotfiles/functions

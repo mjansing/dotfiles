@@ -1,10 +1,10 @@
 # this file contains shortcuts and functions
 
 # edit aliases
-alias aliases="subl ~/dotfiles/bash/aliases"
+alias aliases="subl ~/dotfiles/aliases"
 
 # reload aliases
-alias reload="source ~/dotfiles/bash/aliases"
+alias reload="source ~/dotfiles/aliases"
 
 # navigation
 alias l='ls -lh'
@@ -22,13 +22,13 @@ alias cdd="cd ~/Desktop"
 alias tu="top -o cpu" # sort by cpu
 alias tm="top -o vsize" # sort by memory
 
-# create folder and switch into it
-function take {
-	mkdir $1
-	cd $1
-}
-
 alias cdd="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias p="cd ~/projects"
+
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # git aliases
 alias g="git status"

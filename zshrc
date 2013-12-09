@@ -5,3 +5,4 @@
 . ~/dotfiles/zsh/config
 
 . ~/dotfiles/aliases
+. ~/dotfiles/functions
