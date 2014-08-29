@@ -13,8 +13,8 @@ installcask firefox
 installcask gitbox
 installcask google-chrome
 installcask iterm2
-installcask netnewswire
 installcask rubymine
 installcask skype
+installcask atom 
 installcask sublime-text
 installcask virtualbox
