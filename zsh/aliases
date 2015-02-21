@@ -1,0 +1,24 @@
+# this file contains shortcuts and functions
+
+# reload aliases
+alias reload="source ~/$DOTFILE_DIR/aliases"
+
+alias -- -="cd -" # jump to previous directory
+
+# handy top aliases
+alias tu="top -o cpu" # sort by cpu
+alias tm="top -o vsize" # sort by memory
+
+alias cdd="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias p="cd ~/innoQ/code/github.com/innoq"
+alias d="cd ~/innoQ/documents"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# git aliases
+alias g="git status"
+alias gb="git branch"
+alias gd="git diff"
+alias gl="git log --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph --decorate"

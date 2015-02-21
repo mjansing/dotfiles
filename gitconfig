@@ -2,17 +2,29 @@
 # located: ~/.gitconfig
 
 [user]
-	name = my name
-	email = my email
+  name = my name
+  email = my mail
 
 [color]
-	ui = true
-
+  ui = true
 [core]
-	editor = vim
+  editor = vim
+	quotepath = false
+	excludesfile = ~/.gitignore_global
 
 [alias]
-	ci = commit
-	st = status
-	co = checkout
-	br = branch
+  br = branch
+  ci = commit
+  co = checkout
+  gl = " log --graph --decorate --pretty=oneline --abbrev-commit --all"
+  st = status
+  sm      = submodule
+  smu     = submodule foreach git pull origin master
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[heroku]
+  account = innoq
+[push]
+  default = current

@@ -1,22 +1,23 @@
 # contains values used by other scripts and applications
 
-# add ~/dotfiles/bin directory to path
-export PATH=$PATH:~/dotfiles/bin
-
-# set default editor to sublime
-export EDITOR="subl"
-
-# show custom prompt with vc
-setopt prompt_subst
-export PS1='%c %{$fg[green]%}$(vcprompt -f "[%b:%a%m%u]")%{$reset_color%}$ '
-
+# set default editor to atom
+export EDITOR="atom"
 
 # necessary for chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
-# use ruby 1.9 mode with jruby 1.6.8
-export JRUBY_OPTS=--1.9
+# use dev-mode to speed up jvm startup
+export JRUBY_OPTS=--dev
 
+# set default java
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
 
-# PROMPT='%3~$(git_prompt_info)%# 
+# set default ruby
+chruby ruby-2.2.0
+
+# add postgresapp to path
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

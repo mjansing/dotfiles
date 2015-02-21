@@ -1,9 +1,0 @@
-.DS_Store
-.svn
-.idea
-*~
-.*.swp
-
-# might appear on external disks
-.Spotlight-V100
-.Trashes

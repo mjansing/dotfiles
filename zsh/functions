@@ -1,0 +1,5 @@
+# create folder and switch into it
+function take {
+  mkdir $1
+  cd $1
+}

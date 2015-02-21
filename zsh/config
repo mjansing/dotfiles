@@ -1,8 +1,5 @@
 # this file contains prompt and shell settings
 
-# enable color support
-autoload -U colors && colors
-
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
@@ -10,23 +7,14 @@ HISTFILE=~/.zsh_history
 # ignore duplication command history list
 setopt hist_ignore_dups
 
-# enable spell check
-#setopt CORRECT
-#setopt CORRECTALL
+# ignore commands beginning with a space
+setopt HIST_IGNORE_SPACE
 
 # Show elapsed time if command took more than X seconds
 REPORTTIME=10
 
 # ask to complete if top of list would scroll off screen
 LISTMAX=0
-
-# load autocompletion
-autoload compinit
-compinit
-
-# colorful  output
-export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
