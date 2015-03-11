@@ -29,6 +29,7 @@ set nofoldenable                  " disable code folding
 set clipboard=unnamed             " use the system clipboard
 set wildmenu                      " enable bash style tab completion
 set wildmode=list:longest,full
+set backspace=indent,eol,start    " Allow backspacing everything in insert mode
 runtime macros/matchit.vim        " use % to jump between start/end of methods
 
 set splitright                    " append vertical splits to right
