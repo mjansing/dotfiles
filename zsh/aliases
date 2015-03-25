@@ -11,7 +11,7 @@ alias tm="top -o vsize" # sort by memory
 
 alias cdd="cd ~/Desktop"
 alias dl="cd ~/Downloads"
-alias p="cd ~/innoQ/code/github.com/innoq"
+alias p="cd ~/innoQ/code/innoq"
 alias d="cd ~/innoQ/documents"
 
 # Recursively delete `.DS_Store` files
