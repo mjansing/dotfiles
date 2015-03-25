@@ -150,6 +150,9 @@ map <leader>a :Ack!<space>
 " clear the command line and search highlighting
 noremap <C-h> :nohlsearch<CR>
 
+" format file
+nmap <leader>ff ggVG=
+
 " tab navigation
 map <leader>1 1gt
 map <leader>2 2gt
