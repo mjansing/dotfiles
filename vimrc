@@ -135,36 +135,28 @@ augroup filetypedetect
 augroup END
 
 
-" vim keybindings
-"""""""""""""""""
+" syntastic configuration
 
-" NERDTree toogle
-map <leader>n :NERDTreeToggle<CR>
+" On by default, turn it off for html
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': ['html'] }
 
-" map markdown preview
-map <leader>m :!open -a Marked %<cr><cr>
 
-" map Silver Searcher
-map <leader>a :Ack!<space>
+" custom signs
+let g:syntastic_check_on_open=1
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_style_error_symbol='✗'
+let g:syntastic_style_warning_symbol='⚠'
 
-" clear the command line and search highlighting
-noremap <C-h> :nohlsearch<CR>
+" check on file open
+let g:syntastic_check_on_open = 1
 
-" format file
-nmap <leader>ff ggVG=
+let g:syntastic_ruby_checkers = ['mri']
+let g:syntastic_css_checkers = ['csslint']
+let g:syntastic_scss_checkers = ['scss_lint']
+let g:syntastic_javascript_checkers = ['jshint']
 
-" tab navigation
-map <leader>1 1gt
-map <leader>2 2gt
-map <leader>3 3gt
-map <leader>4 4gt
-map <leader>5 5gt
-map <leader>6 6gt
-map <leader>7 7gt
-map <leader>8 8gt
-map <leader>9 9gt
-map <leader>0 :tablast<cr>
-map <leader>t :tabnew<cr>
-map <leader>w :tabclose<cr>
-
-nmap <silent> <leader>d <Plug>DashSearch
+" import custom vim mappings
+source ~/.vim/mappings.vim

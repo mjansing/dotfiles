@@ -32,6 +32,7 @@ Plugin 'tpope/vim-bundler'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'n3.vim'
+Plugin 'hail2u/vim-css3-syntax'
 
 " Style
 """""""
@@ -52,6 +53,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'raimondi/delimitmate'
 Plugin 'rizzatti/dash.vim'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
