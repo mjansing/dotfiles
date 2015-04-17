@@ -33,6 +33,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'n3.vim'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'kchmck/vim-coffee-script'
 
 " Style
 """""""
@@ -51,7 +52,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'raimondi/delimitmate'
+" Plugin 'raimondi/delimitmate'
 Plugin 'rizzatti/dash.vim'
 Plugin 'scrooloose/syntastic'
 
