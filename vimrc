@@ -57,6 +57,10 @@ endif
 "   set colorcolumn=80
 " endif
 
+if has("gui_macvim") && has("gui_running")
+  set guioptions-=L " remove nerdtree scrollbar
+  set guifont=Monaco:h12 " font size
+endif
 
 " visualisation and themes
 """"""""""""""""""""""""""
@@ -114,6 +118,9 @@ if executable('ag')
 
   " use silver searcher for ctrlp
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " disable cache, ag is fast enough
+  let g:ctrlp_use_caching = 0
 endif
 
 " enable ack.vim auto-preview
