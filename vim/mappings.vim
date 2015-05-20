@@ -30,6 +30,10 @@ noremap <C-h> :nohlsearch<CR>
 nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
 nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>
 
+" newlines without entering insert mode
+nnoremap go o<Esc>k
+nnoremap gO O<Esc>j
+
 " navigation keybindings
 """"""""""""""""""""""""
 
