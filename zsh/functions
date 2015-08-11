@@ -3,3 +3,13 @@ function take {
   mkdir $1
   cd $1
 }
+
+function chjava {
+  if [ "$1" != "" ]; then
+    NEW_JAVA_HOME="`/usr/libexec/java_home -v $1`"
+    echo "exporting JAVA_HOME=\"$NEW_JAVA_HOME\""
+    export JAVA_HOME="$NEW_JAVA_HOME"
+  else
+    `/usr/libexec/java_home -V`
+  fi
+}
