@@ -12,6 +12,7 @@ export JRUBY_OPTS=--dev
 
 # set default java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
+export M2_HOME="/usr/local/Cellar/maven32/3.2.5/libexec"
 
 # set default ruby
 chruby ruby-2.2.0
