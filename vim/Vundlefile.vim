@@ -16,6 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Git
 """""

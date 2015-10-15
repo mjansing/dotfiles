@@ -37,14 +37,11 @@ nnoremap gO O<Esc>j
 " navigation keybindings
 """"""""""""""""""""""""
 
-" Upper left window
-nnoremap <silent> g1 :wincmd t<CR>
-" Upper right window
-nnoremap <silent> g2 :wincmd b<Bar>:wincmd k<CR>
-" Lower left window
-nnoremap <silent> g3 :wincmd t<Bar>:wincmd j<CR>
-" Lower right window
-nnoremap <silent> g4 :wincmd b<CR>
+" smart split switching
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " tab navigation
 map <leader>1 1gt
