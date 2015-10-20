@@ -34,7 +34,7 @@ unsetopt correct_all
 # Always work in a tmux session if tmux is installed
 # if which tmux 2>&1 >/dev/null; then
 #   if [ $TERM != "screen-256color" ] && [ $TERM != "screen" ]; then
-#     tmux attach -t development || tmux new -s development; exit
+#     tmux attach -t dev || tmux new -s dev; exit
 #   fi
 # fi
 
