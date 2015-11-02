@@ -35,6 +35,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'n3.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'cakebaker/scss-syntax.vim'
 
 " Style
 """""""
