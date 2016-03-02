@@ -163,7 +163,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_ruby_checkers = ['mri']
 let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_scss_checkers = ['scss_lint']
-let g:syntastic_javascript_checkers = ['jshint']
+
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
 " import custom vim mappings
 source ~/.vim/mappings.vim
