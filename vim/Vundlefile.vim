@@ -37,6 +37,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'othree/yajs.vim'
 
 " Style
 """""""
