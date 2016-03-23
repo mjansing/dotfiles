@@ -20,6 +20,7 @@
   st = status
   sm      = submodule
   smu     = submodule foreach git pull origin master
+  prune-all = !git remote | xargs -n 1 git remote prune
 [filter "media"]
   required = true
   clean = git media clean %f
