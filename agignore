@@ -7,3 +7,4 @@ spec/vcr
 vendor/
 development.log
 _build/
+node_modules
