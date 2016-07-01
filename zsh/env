@@ -22,9 +22,3 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# docker-machine
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/mjansing/.docker/machine/machines/dev"
-export DOCKER_MACHINE_NAME="dev"
