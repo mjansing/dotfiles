@@ -27,17 +27,10 @@ Plugin 'airblade/vim-gitgutter'
 " Languages
 """""""""""
 
-Plugin 'vim-ruby/vim-ruby'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'elixir-lang/vim-elixir'
 Plugin 'n3.vim'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'othree/yajs.vim'
 
 " Style
 """""""
