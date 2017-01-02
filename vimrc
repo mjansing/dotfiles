@@ -124,7 +124,7 @@ if executable('ag')
 endif
 
 " enable ack.vim auto-preview
-let g:ackpreview=1
+" let g:ackpreview=1
 " let g:ackhighlight=1
 
 " open NERDtree automatically if no file specified
@@ -132,7 +132,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " close vim if NERDtree is the only left open window
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " register RDF extensions for n3.vim
 augroup filetypedetect
