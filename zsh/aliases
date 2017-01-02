@@ -13,12 +13,13 @@ alias cdd="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias p="cd ~/innoQ/code/innoq"
 alias d="cd ~/innoQ/documents"
+alias pd="cd ~/innoQ/documents/projects"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # git aliases
-alias g="git status"
+alias g="git status --short"
 alias gb="git branch"
 alias gd="git diff"
 alias gl="git log --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph --decorate"
@@ -30,3 +31,5 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias java6="chjava 1.6"
 alias java7="chjava 1.7"
 alias java8="chjava 1.8"
+
+alias port_listening="lsof -i -P | grep -i 'listen'"
