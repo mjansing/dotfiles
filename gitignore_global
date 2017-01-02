@@ -12,3 +12,7 @@ Thumbs.db
 \#*\#
 ehthumbs.db
 tags
+
+# intellij
+*.iml
+.idea/
