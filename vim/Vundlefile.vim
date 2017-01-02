@@ -42,6 +42,7 @@ Plugin 'mkitt/tabline.vim'
 """"""
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
