@@ -8,27 +8,27 @@
 [color]
   ui = true
 [core]
-  editor = vim
+	editor = vim
 	quotepath = false
 	excludesfile = ~/.gitignore_global
 
 [alias]
-  br = branch
-  ci = commit
-  co = checkout
-  gl = " log --graph --decorate --pretty=oneline --abbrev-commit --all"
-  st = status
-  sm      = submodule
-  smu     = submodule foreach git pull origin master
-  prune-all = !git remote | xargs -n 1 git remote prune
+	br = branch
+	ci = commit
+	co = checkout
+	gl = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+	st = status
+	sm = submodule
+	smu = submodule foreach git pull origin master
+	prune-all = !git remote | xargs -n 1 git remote prune
 [filter "media"]
-  required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
 [heroku]
-  account = innoq
+	account = innoq
 [push]
-  default = current
+	default = current
 [commit]
 	gpgsign = true
 [pull]
