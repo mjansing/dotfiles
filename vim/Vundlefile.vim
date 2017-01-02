@@ -44,15 +44,15 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'ervandew/supertab'
-Plugin 'tomtom/tlib_vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'raimondi/delimitmate'
 Plugin 'rizzatti/dash.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
+Plugin 'garbas/vim-snipmate' " snippet engine
+Plugin 'tomtom/tlib_vim' " vim-snipmate dependency
+Plugin 'MarcWeber/vim-addon-mw-utils' " vim-snipmate dependency
+Plugin 'honza/vim-snippets' " contains snippets
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
