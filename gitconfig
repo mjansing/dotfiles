@@ -29,3 +29,9 @@
   account = innoq
 [push]
   default = current
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
