@@ -1,5 +1,8 @@
 # this file contains ssh configurations
 
+# automatically add keys to ssh agent, behaviour changed in osx sierra
+AddKeysToAgent yes
+
 # use ssh somehost instead of ssh -p 1234 mjansing@somehost.host.com
 
 # Host somehost
