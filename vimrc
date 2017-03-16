@@ -235,30 +235,39 @@ if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
 
-" syntastic configuration
+" " syntastic configuration
+"
+" " On by default, turn it off for html
+" let g:syntastic_mode_map = { 'mode': 'active',
+"                            \ 'active_filetypes': [],
+"                            \ 'passive_filetypes': ['html'] }
+"
+"
+" " custom signs
+" let g:syntastic_check_on_open=1
+" let g:syntastic_error_symbol='✗'
+" let g:syntastic_warning_symbol='⚠'
+" let g:syntastic_style_error_symbol='✗'
+" let g:syntastic_style_warning_symbol='⚠'
+"
+" " check on file open
+" let g:syntastic_check_on_open = 1
+"
+" let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+" let g:syntastic_css_checkers = ['csslint']
+" let g:syntastic_scss_checkers = ['scss_lint']
+"
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
-" On by default, turn it off for html
-let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['html'] }
+" Neomake configuration
 
+" Run on reading and writing buffers
+autocmd! BufWritePost * Neomake
+autocmd! BufReadPost * Neomake
 
-" custom signs
-let g:syntastic_check_on_open=1
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_style_error_symbol='✗'
-let g:syntastic_style_warning_symbol='⚠'
-
-" check on file open
-let g:syntastic_check_on_open = 1
-
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-let g:syntastic_css_checkers = ['csslint']
-let g:syntastic_scss_checkers = ['scss_lint']
-
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = 'eslint_d'
+" Use the eslint version installed for that project
+let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
 
 " import custom vim mappings
 source ~/.vim/mappings.vim
