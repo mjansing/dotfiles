@@ -5,6 +5,8 @@ alias reload="source ~/$DOTFILE_DIR/aliases"
 
 alias -- -="cd -" # jump to previous directory
 
+alias vi="vim"
+
 # handy top aliases
 alias tu="top -o cpu" # sort by cpu
 alias tm="top -o vsize" # sort by memory
