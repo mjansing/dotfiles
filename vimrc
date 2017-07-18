@@ -281,6 +281,11 @@ endif
 autocmd! BufWritePost * Neomake
 autocmd! BufReadPost * Neomake
 
+autocmd! BufWritePost,BufEnter * Neomake
+
+let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_ruby_enabled_makers = ['rubocop']
+
 " Use the eslint version installed for that project
 let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
 
