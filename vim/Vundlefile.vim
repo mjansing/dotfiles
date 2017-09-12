@@ -13,10 +13,11 @@ Plugin 'gmarik/Vundle.vim'
 " Navigation
 """"""""""""
 
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'majutsushi/tagbar'
 
 " Git
 """""

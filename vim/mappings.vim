@@ -64,6 +64,9 @@ map <leader>w :tabclose<cr>
 " NERDTree toogle
 map <leader>n :NERDTreeToggle<CR>
 
+" tagbar toogle
+map <leader>c :TagbarToggle<CR>
+
 " open markdown in marked
 map <leader>m :!open -a Marked %<cr><cr>
 
