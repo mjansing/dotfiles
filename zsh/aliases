@@ -1,7 +1,7 @@
 # this file contains shortcuts and functions
 
 # reload aliases
-alias reload="source ~/$DOTFILE_DIR/aliases"
+alias reload="source ~/$DOTFILE_DIR/zsh/aliases"
 
 alias -- -="cd -" # jump to previous directory
 
