@@ -53,9 +53,9 @@ if exists("&undodir")
 endif
 
 " hint to keep lines short
-" if exists('+colorcolumn')
-"   set colorcolumn=80
-" endif
+if exists('+colorcolumn')
+  set colorcolumn=80
+endif
 
 if has("gui_macvim") && has("gui_running")
   set guioptions-=L " remove nerdtree scrollbar
