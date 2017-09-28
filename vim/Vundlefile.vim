@@ -37,7 +37,6 @@ Plugin 'n3.vim'
 """""""
 Plugin 'chriskempson/base16-vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'mkitt/tabline.vim'
 
 " Misc
 """"""
@@ -48,7 +47,6 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rizzatti/dash.vim'
-" Plugin 'scrooloose/syntastic'
 Plugin 'neomake/neomake'
 Plugin 'mattn/emmet-vim'
 Plugin 'Shougo/neocomplete'
