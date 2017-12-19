@@ -11,8 +11,7 @@ source /usr/local/share/chruby/auto.sh
 export JRUBY_OPTS=--dev
 
 # set default java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
-export M2_HOME="/usr/local/Cellar/maven/3.3.9/libexec"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home"
 
 # set default ruby
 chruby ruby-2.4.2
