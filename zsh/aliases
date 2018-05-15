@@ -13,9 +13,8 @@ alias tm="top -o vsize" # sort by memory
 
 alias cdd="cd ~/Desktop"
 alias dl="cd ~/Downloads"
-alias p="cd ~/innoQ/code/innoq"
-alias d="cd ~/innoQ/documents"
-alias pd="cd ~/innoQ/documents/projects"
+alias p="cd ~/work/projects"
+alias d="cd ~/work/documents\ \&\ files/"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
