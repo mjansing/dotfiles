@@ -46,11 +46,11 @@ endif
 let mapleader = ","               " set leader key to comma
 
 " centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups//
-set directory=~/.vim/swaps//
-if exists("&undodir")
-  set undodir=~/.vim/undo//
-endif
+" set backupdir=~/.vim/backups//
+" set directory=~/.vim/swaps//
+" if exists("&undodir")
+"   set undodir=~/.vim/undo//
+" endif
 
 " hint to keep lines short
 if exists('+colorcolumn')
