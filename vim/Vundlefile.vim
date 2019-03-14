@@ -47,7 +47,6 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'rizzatti/dash.vim'
-Plugin 'neomake/neomake'
 Plugin 'mattn/emmet-vim'
 Plugin 'Shougo/neocomplete'
 

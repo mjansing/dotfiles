@@ -288,19 +288,5 @@ endif
 " let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
-" Neomake configuration
-
-" Run on reading and writing buffers
-autocmd! BufWritePost * Neomake
-autocmd! BufReadPost * Neomake
-
-autocmd! BufWritePost,BufEnter * Neomake
-
-let g:neomake_javascript_enabled_makers = ['eslint']
-let g:neomake_ruby_enabled_makers = ['rubocop']
-
-" Use the eslint version installed for that project
-let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
-
 " import custom vim mappings
 source ~/.vim/mappings.vim
