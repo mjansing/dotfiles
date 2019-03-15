@@ -30,7 +30,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
-Plugin 'n3.vim'
 
 " Style
 """""""

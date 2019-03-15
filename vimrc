@@ -62,7 +62,7 @@ if has("gui_macvim") && has("gui_running")
   set guifont=Monaco:h12 " font size
 endif
 
-" visualisation and themes
+" visualization and themes
 """"""""""""""""""""""""""
 
 " set dark background and color scheme
@@ -146,13 +146,6 @@ function! s:CloseIfOnlyNerdTreeLeft()
     endif
   endif
 endfunction
-
-" register RDF extensions for n3.vim
-augroup filetypedetect
-  au BufNewFile,BufRead *.n3  setfiletype n3
-  au BufNewFile,BufRead *.ttl  setfiletype n3
-  au BufNewFile,BufRead *.nt  setfiletype n3
-augroup END
 
 " neocomplete configuration
 
