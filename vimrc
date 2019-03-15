@@ -65,9 +65,11 @@ endif
 " visualization and themes
 """"""""""""""""""""""""""
 
-" set dark background and color scheme
-set background=dark
-colorscheme base16-tomorrow-night
+" base16-shell config
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 " highlight the status bar when in insert mode
 if version >= 700

@@ -33,8 +33,14 @@ Plugin 'tpope/vim-bundler'
 
 " Style
 """""""
-Plugin 'chriskempson/base16-vim'
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'chriskempson/base16-vim'
+" 2019-02-19 - Temporarily use fork of base16-vim which fixes an issue with
+" Vim 8.1.0887 and newer. When a change is landed, then revert back to
+" canonical repo.
+"
+" Issue https://github.com/chriskempson/base16-vim/issues/197
+" Pull Request https://github.com/chriskempson/base16-vim/pull/198
+Plugin 'danielwe/base16-vim'
 
 " Misc
 """"""

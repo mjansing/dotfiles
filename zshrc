@@ -38,6 +38,12 @@ if which tmux 2>&1 >/dev/null; then
   fi
 fi
 
+# Base16 Shell
+BASE16_SHELL="$HOME/$DOTFILE_DIR/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
 # load related files
 . ~/$DOTFILE_DIR/zsh/env
 . ~/$DOTFILE_DIR/zsh/config
