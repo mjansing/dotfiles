@@ -64,17 +64,5 @@ map <leader>w :tabclose<cr>
 " NERDTree toogle
 map <leader>n :NERDTreeToggle<CR>
 
-" tagbar toogle
-map <leader>c :TagbarToggle<CR>
-
-" open markdown in marked
-map <leader>m :!open -a Marked %<cr><cr>
-
 " map silver searcher
 map <leader>a :Ack!<space>
-
-" open word under cursor in dash
-nmap <silent> <leader>d <Plug>DashSearch
-
-" vim-emmet trigger key (<C-Y> is used by tmux)
-let g:user_emmet_leader_key='<C-E>'

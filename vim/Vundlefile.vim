@@ -17,7 +17,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'majutsushi/tagbar'
 
 " Git
 """""
@@ -46,8 +45,6 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'rizzatti/dash.vim'
-Plugin 'mattn/emmet-vim'
 Plugin 'Shougo/neocomplete'
 
 Plugin 'Shougo/neosnippet'
