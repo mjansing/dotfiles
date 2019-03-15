@@ -67,29 +67,7 @@ endif
 
 " set dark background and color scheme
 set background=dark
-colorscheme base16-railscasts
-
-" some extra colors
-highlight clear SignColumn
-highlight VertSplit    ctermbg=236
-highlight ColorColumn  ctermbg=237
-highlight LineNr       ctermbg=236 ctermfg=240
-highlight CursorLineNr ctermbg=236 ctermfg=240
-highlight CursorLine   ctermbg=236
-highlight StatusLineNC ctermbg=238 ctermfg=0
-highlight StatusLine   ctermbg=240 ctermfg=12
-highlight IncSearch    ctermbg=3   ctermfg=1
-highlight Search       ctermbg=1   ctermfg=3
-highlight Visual       ctermbg=3   ctermfg=0
-highlight Pmenu        ctermbg=240 ctermfg=12
-highlight PmenuSel     ctermbg=3   ctermfg=1
-highlight SpellBad     ctermbg=0   ctermfg=1
-
-" for some reason i had to fix gitgutter background colors
-highlight GitGutterAdd ctermbg=236
-highlight GitGutterChange ctermbg=236
-highlight GitGutterDelete ctermbg=236
-highlight GitGutterChangeDelete ctermbg=236
+colorscheme base16-tomorrow-night
 
 " highlight the status bar when in insert mode
 if version >= 700
