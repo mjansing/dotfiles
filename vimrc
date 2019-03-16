@@ -45,13 +45,6 @@ endif
 
 let mapleader = ","               " set leader key to comma
 
-" centralize backups, swapfiles and undo history
-" set backupdir=~/.vim/backups//
-" set directory=~/.vim/swaps//
-" if exists("&undodir")
-"   set undodir=~/.vim/undo//
-" endif
-
 " hint to keep lines short
 if exists('+colorcolumn')
   set colorcolumn=80
@@ -89,23 +82,11 @@ autocmd BufWinLeave * call clearmatches()
 " vim plugin configuration
 """"""""""""""""""""""""""
 
+" use fzf for fuzzy search
+set rtp+=/usr/local/opt/fzf
+
 " put git status, column/row number, total lines, and percentage in status
 set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
-
-if executable('ag')
-  " use the silver search (ag)  instead of ack
-  let g:ackprg = 'ag --nogroup --nocolor --column'
-
-  " use silver searcher for ctrlp
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " disable cache, ag is fast enough
-  let g:ctrlp_use_caching = 0
-endif
-
-" enable ack.vim auto-preview
-" let g:ackpreview=1
-" let g:ackhighlight=1
 
 " open NERDtree automatically if no file specified
 autocmd StdinReadPre * let s:std_in=1

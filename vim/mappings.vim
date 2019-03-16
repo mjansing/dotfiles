@@ -64,8 +64,11 @@ map <leader>w :tabclose<cr>
 " NERDTree toogle
 map <leader>n :NERDTreeToggle<CR>
 
-" map silver searcher
-map <leader>a :Ack!<space>
-
 " clear search on return
 nnoremap <CR> :nohlsearch<cr>
+
+" fuzzy search for and in files
+nnoremap <C-p> :Files<Cr>
+nnoremap <C-f> :Rg<Cr>
+
+
