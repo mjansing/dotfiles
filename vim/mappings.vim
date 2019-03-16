@@ -66,3 +66,6 @@ map <leader>n :NERDTreeToggle<CR>
 
 " map silver searcher
 map <leader>a :Ack!<space>
+
+" clear search on return
+nnoremap <CR> :nohlsearch<cr>
