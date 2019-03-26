@@ -47,6 +47,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'w0rp/ale'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Shougo/neocomplete'
 

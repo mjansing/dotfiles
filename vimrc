@@ -108,6 +108,9 @@ function! s:CloseIfOnlyNerdTreeLeft()
   endif
 endfunction
 
+" ale linter configuration
+let g:ale_sign_column_always = 1
+
 " neocomplete configuration
 
 " Disable AutoComplPop.
