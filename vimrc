@@ -1,7 +1,7 @@
 " .vimrc
 set encoding=utf-8
 
-source ~/.vim/Vundlefile.vim
+source ~/.vim/plugins.vim
 
 " vim core config
 """""""""""""""""
