@@ -49,3 +49,5 @@ BASE16_SHELL="$HOME/$DOTFILE_DIR/base16-shell/"
 . ~/$DOTFILE_DIR/zsh/config
 . ~/$DOTFILE_DIR/zsh/functions
 . ~/$DOTFILE_DIR/zsh/aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

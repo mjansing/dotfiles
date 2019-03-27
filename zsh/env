@@ -3,7 +3,11 @@
 # set default editor to atom
 export EDITOR="vim"
 
+# add syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# add autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # necessary for chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
