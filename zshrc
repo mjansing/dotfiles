@@ -24,7 +24,7 @@ DISABLE_AUTO_TITLE="true"
 #
 # Example format:
 #   plugins=(rails git textmate ruby)
-plugins=(git bundler tmux tmuxinator osx brew zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(git bundler tmux tmuxinator osx brew)
 
 source $ZSH/oh-my-zsh.sh
 
