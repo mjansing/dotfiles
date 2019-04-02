@@ -21,7 +21,7 @@
 	st = status
 	sm = submodule
 	smu = submodule foreach git pull origin master
-	smu = prune-all = !git remote | xargs -n 1 git remote prune
+	prune-all = !git remote | xargs -n 1 git remote prune
 
 [filter "media"]
 	required = true
@@ -45,3 +45,8 @@
 
 [pager]
 	branch = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
