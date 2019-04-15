@@ -1,3 +1,6 @@
+# uncomment for zsh load benchmark
+# zmodload zsh/zprof
+
 # dotfile dir
 DOTFILE_DIR="dotfiles"
 
@@ -51,3 +54,6 @@ BASE16_SHELL="$HOME/$DOTFILE_DIR/base16-shell/"
 . ~/$DOTFILE_DIR/zsh/aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# uncomment for zsh load benchmark
+# zprof
