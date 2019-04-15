@@ -38,4 +38,4 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/usr/local/anaconda3/bin:$PATH"
 
 # set default theme
-base16_tomorrow-night
+base16_default-dark
