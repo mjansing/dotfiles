@@ -34,5 +34,8 @@ export PATH="$PATH:$HOME/.yarn/bin"
 # add newer curl
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
+# anaconda python dist
+export PATH="/usr/local/anaconda3/bin:$PATH"
+
 # set default theme
 base16_tomorrow-night
