@@ -68,7 +68,7 @@ map <leader>n :NERDTreeToggle<CR>
 nnoremap <CR> :nohlsearch<cr>
 
 " fuzzy search for and in files
-nnoremap <C-p> :Files<Cr>
+nnoremap <C-p> :GFiles<Cr>
 nnoremap <C-f> :Rg<Cr>
 
 
