@@ -1,7 +1,7 @@
 # this file contains prompt and shell settings
 
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=5000
+SAVEHIST=5000
 HISTFILE=~/.zsh_history
 
 # ignore duplication command history list
