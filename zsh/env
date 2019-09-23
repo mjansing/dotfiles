@@ -34,9 +34,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # add yarn to path
 export PATH="$PATH:$HOME/.yarn/bin"
 
-# anaconda python dist
-export PATH="/usr/local/anaconda3/bin:$PATH"
-
 # add newer curl
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
