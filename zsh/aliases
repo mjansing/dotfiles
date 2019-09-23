@@ -7,10 +7,6 @@ alias -- -="cd -" # jump to previous directory
 
 alias vi="vim"
 
-# handy top aliases
-alias tu="top -o cpu" # sort by cpu
-alias tm="top -o vsize" # sort by memory
-
 alias cdd="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias p="cd ~/code/innoq/projects"
@@ -39,3 +35,5 @@ alias port_listening="lsof -i -P | grep -i 'listen'"
 alias bsl="brew services list"
 alias bsr="brew services run"
 alias bss="brew services stop"
+
+alias mux="tmuxinator"
