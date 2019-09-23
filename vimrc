@@ -111,6 +111,13 @@ endfunction
 
 " ale linter configuration
 let g:ale_sign_column_always = 1
+let g:ale_set_highlights = 0
+
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=red ctermfg=white
+highlight ALEWarningSign ctermbg=yellow ctermfg=black
+highlight ALEWarning ctermbg=RED
 
 " neocomplete configuration
 
