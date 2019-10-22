@@ -18,7 +18,7 @@ set showmatch                     " show bracket matches
 set ignorecase                    " ignore case in search
 set hlsearch                      " highlight all search matches
 set smartcase                     " pay attention to case when caps are used
-set incsearch                     " show search results as I type
+" set incsearch                     " show search results as I type
 set ttimeoutlen=100               " decrease timeout for faster insert with 'O'
 set vb                            " enable visual bell (disable audio bell)
 set ruler                         " show row and column in footer
@@ -29,7 +29,7 @@ set nofoldenable                  " disable code folding
 set clipboard=unnamed             " use the system clipboard
 set wildmenu                      " enable bash style tab completion
 set noswapfile                    " disable swap files
-set cursorline                    " highlight current cursorline
+" set cursorline                    " highlight current cursorline
 set wildmode=list:longest,full
 set backspace=indent,eol,start    " Allow backspacing everything in insert mode
 runtime macros/matchit.vim        " use % to jump between start/end of methods
