@@ -25,6 +25,7 @@ Plug 'airblade/vim-gitgutter'
 """""""""""
 
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-rails'
 
 " Style
 """""""
