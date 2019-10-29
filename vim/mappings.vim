@@ -67,8 +67,6 @@ map <leader>n :NERDTreeToggle<CR>
 " clear search on return
 nnoremap <CR> :nohlsearch<cr>
 
-" fuzzy search for and in files
-nnoremap <C-p> :GFiles<Cr>
+" fuzzy search for and in files without using NERDTree buffer
+nnoremap <silent> <expr> <C-p> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":GFiles\<cr>"
 nnoremap <C-f> :Rg<Cr>
-
-
