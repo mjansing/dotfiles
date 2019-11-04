@@ -42,10 +42,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
 Plug 'w0rp/ale'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'Shougo/neocomplete'
-
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
 
 " All of your Plugins must be added before the following line
 call plug#end()
