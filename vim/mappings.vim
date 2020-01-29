@@ -63,6 +63,7 @@ map <leader>w :tabclose<cr>
 
 " NERDTree toogle
 map <leader>n :NERDTreeToggle<CR>
+map <leader>f :NERDTreeFind<CR>
 
 " clear search on return
 nnoremap <CR> :nohlsearch<cr>
