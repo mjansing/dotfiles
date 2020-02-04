@@ -21,6 +21,7 @@ set smartcase                     " pay attention to case when caps are used
 " set incsearch                     " show search results as I type
 set ttimeoutlen=100               " decrease timeout for faster insert with 'O'
 set updatetime=300                " reduce updatetime for gitgutter (default 4000)
+set scrolloff=25                  " always show 20 lines above/under cursor
 set vb                            " enable visual bell (disable audio bell)
 set ruler                         " show row and column in footer
 set scrolloff=2                   " minimum lines above/below cursor
