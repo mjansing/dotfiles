@@ -19,7 +19,7 @@ source /usr/local/share/chruby/auto.sh
 export JRUBY_OPTS=--dev
 
 # set default java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
 
 # set default ruby
 chruby ruby-2.6.6
