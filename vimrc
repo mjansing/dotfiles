@@ -124,5 +124,7 @@ highlight ALEWarning ctermbg=RED
 " git-gutter configuration
 let g:gitgutter_grep = 'rg'
 
+let g:deoplete#enable_at_startup = 1
+
 " import custom vim mappings
 source ~/.vim/mappings.vim
