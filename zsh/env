@@ -25,7 +25,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents
 chruby ruby-2.6.6
 
 # fnm
-eval "$(fnm env --multi)"
+eval "$(fnm env)"
 
 # add postgresapp to path
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
