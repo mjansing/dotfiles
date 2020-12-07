@@ -4,6 +4,14 @@
 # dotfile dir
 DOTFILE_DIR="dotfiles"
 
+# homebrew zsh completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/$DOTFILE_DIR/.oh-my-zsh
 
