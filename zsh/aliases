@@ -39,3 +39,6 @@ alias bss="brew services stop"
 alias mux="tmuxinator"
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+# disable macos sys update notification bubble
+alias disableUpdateBubble="defaults write com.apple.systempreferences AttentionPrefBundleIDs 0 && killall Dock"
