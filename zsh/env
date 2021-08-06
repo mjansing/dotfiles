@@ -21,8 +21,10 @@ export JRUBY_OPTS=--dev
 # set default java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
 
+export CHROMIUM_PATH="/Applications/Chromium.app/Contents/MacOS/Chromium"
+
 # set default ruby
-chruby ruby-2.6.6
+chruby ruby-2.6.8
 
 # fnm
 eval "$(fnm env)"
