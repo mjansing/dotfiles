@@ -1,61 +1,29 @@
 " .vimrc
-set encoding=utf-8
-
 source ~/.vim/plugins.vim
 
 " vim core config
 """""""""""""""""
 
-syntax on                         " show syntax highlighting
-filetype plugin indent on
-set autoindent                    " set auto indent
-set ts=2                          " set indent to 2 spaces
-set shiftwidth=2
-set expandtab                     " use spaces, not tab characters
-set nocompatible                  " don't need to be compatible with old vim
 set number                        " show line numbers
 set showmatch                     " show bracket matches
 set ignorecase                    " ignore case in search
 set hlsearch                      " highlight all search matches
 set smartcase                     " pay attention to case when caps are used
 " set incsearch                     " show search results as I type
-set ttimeoutlen=100               " decrease timeout for faster insert with 'O'
-set updatetime=300                " reduce updatetime for gitgutter (default 4000)
+" set updatetime=300                " reduce updatetime for gitgutter (default 4000)
 set vb                            " enable visual bell (disable audio bell)
-set ruler                         " show row and column in footer
-set scrolloff=5                   " minimum lines above/below cursor
-set laststatus=2                  " always show status bar
-set list listchars=tab:»·,trail:· " show extra space characters
 set nofoldenable                  " disable code folding
 set clipboard=unnamed             " use the system clipboard
-set wildmenu                      " enable bash style tab completion
 set noswapfile                    " disable swap files
 " set cursorline                    " highlight current cursorline
-set wildmode=list:longest,full
-set backspace=indent,eol,start    " Allow backspacing everything in insert mode
-runtime macros/matchit.vim        " use % to jump between start/end of methods
-
 set splitright                    " append vertical splits to right
 set splitbelow                    " append horizontal splits to bottom
-
-if has("autocmd")
- " automatically broadcast config changes
- autocmd bufwritepost .vimrc source ~/.vimrc
-
- " Remove trailing whitespaces on save
- autocmd BufWritePre * :%s/\s\+$//e
-endif
 
 let mapleader = ","               " set leader key to comma
 
 " hint to keep lines short
 if exists('+colorcolumn')
   set colorcolumn=80
-endif
-
-if has("gui_macvim") && has("gui_running")
-  set guioptions-=L " remove nerdtree scrollbar
-  set guifont=Monaco:h12 " font size
 endif
 
 " visualization and themes

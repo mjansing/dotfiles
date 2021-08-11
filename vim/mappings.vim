@@ -23,9 +23,6 @@ nmap <leader>ff ggVG=
 " highlight current word without jumping to next
 nnoremap <leader>h *<C-O>
 
-" clear search
-noremap <C-h> :nohlsearch<CR>
-
 " split window and switch to the new split
 nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
 nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>
@@ -64,9 +61,6 @@ map <leader>w :tabclose<cr>
 " NERDTree toogle
 map <leader>n :NERDTreeToggle<CR>
 map <leader>f :NERDTreeFind<CR>
-
-" clear search on return
-nnoremap <CR> :nohlsearch<cr>
 
 " fuzzy search for and in files without using NERDTree buffer
 nnoremap <silent> <expr> <C-p> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":GFiles\<cr>"
