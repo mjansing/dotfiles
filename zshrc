@@ -45,9 +45,9 @@ source $ZSH/oh-my-zsh.sh
 # Disable auto-correct
 unsetopt correct_all
 
-# Always work in a tmux session if tmux is installed
+# Always work in a tmux session if tmux is installed and using iterm
 if which tmux 2>&1 >/dev/null; then
-  if [ "$TERM" != "screen-256color" ] && [ "$TERM" != "screen" ]; then
+  if [ "$TERM" != "screen-256color" ] && [ "$TERM" != "screen" ] && [ "$LC_TERMINAL" = "iTerm2" ]; then
     tmux attach -t dev || tmux new -s dev; exit
   fi
 fi
