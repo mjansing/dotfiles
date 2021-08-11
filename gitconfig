@@ -6,47 +6,61 @@
   email = my mail
 
 [color]
-	ui = true
+  ui = true
 
 [core]
-	editor = vim
-	quotepath = false
-	excludesfile = ~/.gitignore_global
+  editor = vim
+  quotepath = false
+  excludesfile = ~/.gitignore_global
 
 [alias]
-	br = branch
-	ci = commit
-	co = checkout
-	gl = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
-	st = status
-	sm = submodule
-	smu = submodule foreach git pull origin master
-	prune-all = !git remote | xargs -n 1 git remote prune
+  br = branch
+  ci = commit
+  co = checkout
+  gl = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+  st = status
+  sm = submodule
+  smu = submodule foreach git pull origin master
+  prune-all = !git remote | xargs -n 1 git remote prune
 
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 
 [heroku]
-	account = innoq
+  account = innoq
 
 [push]
-	default = current
+  default = current
 
 [commit]
-	gpgsign = true
+  gpgsign = true
 
 [pull]
-	rebase = true
+  rebase = true
 
 [rebase]
-	autoStash = true
+  autoStash = true
 
 [pager]
-	branch = false
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+
+[delta]
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  navigate = true
+  side-by-side = true
+  line-numbers = true
+
+[interactive]
+  diffFilter = delta --color-only
+
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
