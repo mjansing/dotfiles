@@ -10,7 +10,7 @@ call plug#begin('~/.vim/bundle')
 
 " Navigation
 """"""""""""
-
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
