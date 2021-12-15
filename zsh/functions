@@ -4,12 +4,20 @@ function take {
   cd $1
 }
 
-function chjava {
-  if [ "$1" != "" ]; then
-    NEW_JAVA_HOME="`/usr/libexec/java_home -v $1`"
-    echo "exporting JAVA_HOME=\"$NEW_JAVA_HOME\""
-    export JAVA_HOME="$NEW_JAVA_HOME"
-  else
-    `/usr/libexec/java_home -V`
-  fi
+function jump {
+  cd ~/work/code/$1
+}
+
+# creates and switches to a new tmux session
+function start {
+  tmux new -d -s $1
+  tmux switch -t $1
+}
+
+# stops current tmux session and switches to dev
+function stop {
+  session=`tmux display-message -p "#S"`
+
+  tmux switch -t dev
+  tmux kill-session -t $session
 }

@@ -9,7 +9,7 @@ alias vi="vim"
 
 alias cdd="cd ~/Desktop"
 alias dl="cd ~/Downloads"
-alias p="cd ~/code/innoq/projects"
+alias pc="cd ~/work/code"
 alias pd="cd ~/work/docs/projects"
 
 # Recursively delete `.DS_Store` files
@@ -24,10 +24,6 @@ alias gl="git log --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgr
 # quickly show/hide files
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-
-alias java6="chjava 1.6"
-alias java7="chjava 1.7"
-alias java8="chjava 1.8"
 
 alias port_listening="lsof -i -P | grep -i 'listen'"
 
