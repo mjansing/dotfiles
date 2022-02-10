@@ -29,17 +29,11 @@ chruby ruby-2.6.9
 # fnm
 eval "$(fnm env)"
 
-# add postgresapp to path
-export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# add yarn to path
-export PATH="$PATH:$HOME/.yarn/bin"
-
 # add newer curl
-export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+# add custom scripts
+export PATH="$PATH:/Users/$(whoami)/bin"
 
 # fzf config, use faster fd
 export FZF_DEFAULT_COMMAND='fd --type f --color=never'
