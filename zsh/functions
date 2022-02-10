@@ -8,6 +8,11 @@ function jump {
   cd ~/work/code/$1
 }
 
+# cd using interactive fzf
+function cdfz {
+   cd $(fd --type directory | fzf)
+}
+
 # creates and switches to a new tmux session
 function start {
   tmux new -d -s $1
