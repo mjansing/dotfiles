@@ -38,7 +38,7 @@ DISABLE_AUTO_TITLE="true"
 #
 # Example format:
 #   plugins=(rails git textmate ruby)
-plugins=(git bundler tmux tmuxinator osx brew colored-man-pages)
+plugins=(git bundler tmux tmuxinator macos brew colored-man-pages extract)
 
 source $ZSH/oh-my-zsh.sh
 
