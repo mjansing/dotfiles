@@ -17,8 +17,6 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # git aliases
 alias g="git status --short"
-alias gb="git branch"
-alias gd="git diff"
 alias gl="git log --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph --decorate"
 
 # quickly show/hide files
