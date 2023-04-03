@@ -43,24 +43,12 @@
 [rebase]
   autoStash = true
 
-[pager]
-  diff = delta
-  log = delta
-  reflog = delta
-  show = delta
-
-[delta]
-  plus-style = "syntax #012800"
-  minus-style = "syntax #340001"
-  navigate = true
-  side-by-side = true
-  line-numbers = true
-
-[interactive]
-  diffFilter = delta --color-only
-
 [filter "lfs"]
   required = true
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
+
+[diff]
+	external = difft
+	colorMoved = zebra
