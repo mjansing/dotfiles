@@ -72,3 +72,5 @@ BASE16_SHELL="$HOME/$DOTFILE_DIR/base16-shell/"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+source /Users/mjansing/.docker/init-zsh.sh || true # Added by Docker Desktop
