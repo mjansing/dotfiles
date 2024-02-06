@@ -26,3 +26,7 @@ function stop {
   tmux switch -t dev
   tmux kill-session -t $session
 }
+
+function fuck_mysql2 {
+  gem install mysql2 -v "$1" -- --with-opt-dir=$(brew --prefix openssl) --with-ldflags=-L$(brew --prefix zstd)/lib --with-cflags="-Wno-error=implicit-function-declaration"
+}
