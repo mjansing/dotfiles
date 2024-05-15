@@ -42,3 +42,7 @@ export FZF_ALT_C_COMMAND='fd --type d . --color=never'
 
 # set default theme
 base16_railscasts
+
+# erlang and elixir
+source /usr/local/lib/erlang/26.1/activate
+source "$HOME/.kiex/scripts/kiex"
