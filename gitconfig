@@ -50,5 +50,11 @@
   process = git-lfs filter-process
 
 [diff]
-	external = difft
-	colorMoved = zebra
+  external = difft
+  colorMoved = zebra
+
+[pager]
+  branch = false
+
+[gpg]
+  program = gpg2
