@@ -38,25 +38,12 @@ DISABLE_AUTO_TITLE="true"
 #
 # Example format:
 #   plugins=(rails git textmate ruby)
-plugins=(git bundler tmux tmuxinator macos brew colored-man-pages extract)
+plugins=(git bundler macos brew colored-man-pages extract direnv)
 
 source $ZSH/oh-my-zsh.sh
 
 # Disable auto-correct
 unsetopt correct_all
-
-# Always work in a tmux session if tmux is installed and using iterm
-if which tmux 2>&1 >/dev/null; then
-  if [ "$TERM" != "screen-256color" ] && [ "$TERM" != "screen" ] && [ "$LC_TERMINAL" = "iTerm2" ]; then
-    tmux attach -t dev || tmux new -s dev; exit
-  fi
-fi
-
-# Base16 Shell
-BASE16_SHELL="$HOME/$DOTFILE_DIR/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        source "$BASE16_SHELL/profile_helper.sh"
 
 # load related files
 . ~/$DOTFILE_DIR/zsh/env

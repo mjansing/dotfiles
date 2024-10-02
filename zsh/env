@@ -41,10 +41,3 @@ export PATH="$PATH:/Users/$(whoami)/bin"
 export FZF_DEFAULT_COMMAND='fd --type f --color=never'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND='fd --type d . --color=never'
-
-# set default theme
-base16_railscasts
-
-# erlang and elixir
-source /usr/local/lib/erlang/26.1/activate
-source "$HOME/.kiex/scripts/kiex"
