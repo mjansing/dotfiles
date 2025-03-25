@@ -9,9 +9,10 @@ theme = "catppuccin-macchiato"
 font-family = "FiraCode Nerd Font Mono"
 font-size = 14
 
-# Unbind some keys so they will be forwarded to zellij
-macos-option-as-alt = true
+# threat left option key as alt
+macos-option-as-alt = left
 
+# unbind some keys so they will be forwarded to zellij
 keybind = cmd+t=unbind
 keybind = cmd+n=unbind
 keybind = cmd+c=unbind
