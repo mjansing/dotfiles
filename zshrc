@@ -38,7 +38,7 @@ DISABLE_AUTO_TITLE="true"
 #
 # Example format:
 #   plugins=(rails git textmate ruby)
-plugins=(git bundler macos brew colored-man-pages extract direnv)
+plugins=(git brew macos colored-man-pages extract direnv bundler)
 
 source $ZSH/oh-my-zsh.sh
 
