@@ -29,11 +29,7 @@ endif
 " visualization and themes
 """"""""""""""""""""""""""
 
-" base16-shell config
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+colorscheme catppuccin_macchiato
 
 " highlight the status bar when in insert mode
 if version >= 700

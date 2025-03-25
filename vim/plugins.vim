@@ -32,6 +32,7 @@ Plug 'tpope/vim-rails'
 """""""
 
 Plug 'chriskempson/base16-vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Misc
 """"""

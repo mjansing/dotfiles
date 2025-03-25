@@ -45,6 +45,11 @@ source $ZSH/oh-my-zsh.sh
 # Disable auto-correct
 unsetopt correct_all
 
+# always work in a zellij session when working in ghostty
+if [[ -z "$ZELLIJ" && "$TERM" == "xterm-ghostty" ]]; then
+    zellij attach -c dev
+fi
+
 # load related files
 . ~/$DOTFILE_DIR/zsh/env
 . ~/$DOTFILE_DIR/zsh/config
