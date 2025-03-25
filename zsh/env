@@ -24,7 +24,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents
 export CHROMIUM_PATH="/Applications/Chromium.app/Contents/MacOS/Chromium"
 
 # set default ruby
-chruby 3.3.5
+chruby 3.3.7
 
 export PGGSSENCMODE="disable"
 
