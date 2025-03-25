@@ -7,6 +7,8 @@ alias -- -="cd -" # jump to previous directory
 
 alias vi="vim"
 
+alias ls="eza --icons=always" # give eza a try
+
 alias cdd="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 alias pc="cd ~/work/code"
@@ -18,6 +20,7 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 # git aliases
 alias g="git status --short"
 alias gl="git log --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph --decorate"
+alias gpa="ls -d */ | xargs -I {} git -C {} pull"
 
 # quickly show/hide files
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
@@ -29,8 +32,6 @@ alias port_listening="lsof -i -P | grep -i 'listen'"
 alias bsl="brew services list"
 alias bsr="brew services run"
 alias bss="brew services stop"
-
-alias mux="tmuxinator"
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
