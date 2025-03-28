@@ -29,7 +29,7 @@ endif
 " visualization and themes
 """"""""""""""""""""""""""
 
-colorscheme catppuccin_macchiato
+colorscheme nightfly
 
 " highlight the status bar when in insert mode
 if version >= 700

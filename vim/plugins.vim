@@ -32,7 +32,7 @@ Plug 'tpope/vim-rails'
 """""""
 
 Plug 'chriskempson/base16-vim'
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 
 " Misc
 """"""
