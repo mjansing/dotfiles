@@ -8,8 +8,3 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 
 # git
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
-
-# tmux
-# TODO: add reattach-to-users-namespace
-ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-

@@ -13,20 +13,6 @@ function cdfz {
    cd $(fd --type directory | fzf)
 }
 
-# creates and switches to a new tmux session
-function start {
-  tmux new -d -s $1
-  tmux switch -t $1
-}
-
-# stops current tmux session and switches to dev
-function stop {
-  session=`tmux display-message -p "#S"`
-
-  tmux switch -t dev
-  tmux kill-session -t $session
-}
-
 function fuck_mysql2 {
   gem install mysql2 -v "$1" -- --with-opt-dir=$(brew --prefix openssl) --with-ldflags=-L$(brew --prefix zstd)/lib --with-cflags="-Wno-error=implicit-function-declaration"
 }
