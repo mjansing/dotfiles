@@ -30,3 +30,11 @@ function stop {
 function fuck_mysql2 {
   gem install mysql2 -v "$1" -- --with-opt-dir=$(brew --prefix openssl) --with-ldflags=-L$(brew --prefix zstd)/lib --with-cflags="-Wno-error=implicit-function-declaration"
 }
+
+function fuck_bson_ext {
+  gem install bson_ext -v "$1" -- --with-cflags="-Wno-error=implicit-function-declaration"
+}
+
+function fuck_pg {
+  gem install pg -v "$1" -- --with-pg-config=$(brew --prefix postgresql@17)/bin/pg_config
+}
