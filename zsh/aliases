@@ -5,7 +5,8 @@ alias reload="source ~/$DOTFILE_DIR/zsh/aliases"
 
 alias -- -="cd -" # jump to previous directory
 
-alias vi="vim"
+alias vi="nvim"
+alias vim="nvim"
 
 alias ls="eza --icons=always" # give eza a try
 
